@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>株式投資成功セミナー | 本田健</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;900&family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1e40af',
+                        'accent': '#dc2626',
+                        'gold': '#fbbf24'
+                    },
+                    fontFamily: {
+                        'japanese': ['Noto Sans JP', 'Noto Sans SC', 'Hiragino Sans', 'Yu Gothic Medium', 'Yu Gothic', 'Meiryo', 'sans-serif'],
+                        'chinese': ['Noto Sans SC', 'Noto Sans JP', 'PingFang SC', 'Microsoft YaHei', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes breathe {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .breathe {
+            animation: breathe 2s ease-in-out infinite;
+        }
+        @keyframes gradient {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        .gradient-animate {
+            background: linear-gradient(-45deg, #1e40af, #3b82f6, #06b6d4, #0891b2);
+            background-size: 400% 400%;
+            animation: gradient 3s ease infinite;
+        }
+        @keyframes shine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        .shine-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        .shine-effect::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: shine 3s infinite;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        .luxury-shadow {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.05);
+        }
+        @media (max-width: 768px) {
+            .mobile-compact { padding-top: 1rem !important; padding-bottom: 1rem !important; }
+            .mobile-compact-text { margin-bottom: 0.75rem !important; }
+        }
+    </style>
+</head>
+<body class="font-japanese bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 text-gray-800">
+    
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 shine-effect">
+        <div class="container mx-auto px-4 py-4 md:py-6">
+            <h1 class="text-xl md:text-3xl font-bold text-white text-center tracking-wide">株式投資成功セミナー</h1>
+        </div>
+    </header>
+
+    <!-- Hero Section with Author Introduction -->
+    <section class="bg-gradient-to-br from-blue-50 via-white to-blue-50 py-4 md:py-12 mobile-compact">
+        <div class="container mx-auto px-2 md:px-4">
+            <!-- Mobile Layout -->
+            <div class="md:hidden">
+                <div class="bg-gradient-to-br from-white to-blue-50 rounded-2xl luxury-shadow border border-white/20 overflow-hidden">
+                    <!-- Header with photo and name -->
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-700 p-4 text-white">
+                        <div class="flex items-center gap-4">
+                            <img src="img/1.jpg" alt="本田健" class="w-20 h-20 rounded-full object-cover border-3 border-white shadow-lg">
+                            <div class="flex-1">
+                                <h2 class="text-2xl font-bold mb-1">本田健</h2>
+                                <p class="text-blue-100 text-sm font-medium">ベストセラー作家・投資エキスパート</p>
+                                <p class="text-blue-200 text-xs mt-1">神戸出身 | 元経営コンサルタント</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Stats Grid -->
+                    <div class="p-4 space-y-3">
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-3 rounded-lg text-center">
+                                <div class="text-2xl font-bold text-blue-700">900万部</div>
+                                <p class="text-xs text-blue-600">累計発行部数</p>
+                            </div>
+                            <div class="bg-gradient-to-r from-green-50 to-green-100 p-3 rounded-lg text-center">
+                                <div class="text-2xl font-bold text-green-700">34カ国</div>
+                                <p class="text-xs text-green-600">翻訳言語</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Representative works -->
+                        <div class="bg-gradient-to-r from-blue-600 to-blue-700 p-3 rounded-lg text-white">
+                            <h3 class="font-bold mb-2 text-sm">📚 代表作品</h3>
+                            <div class="text-xs space-y-1">
+                                <p>• 『ユダヤ人大富豪の教え』</p>
+                                <p>• 『20代にしておきたい17のこと』</p>
+                                <p>• 『ハッピー・マネー』</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Introduction text -->
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <p class="text-sm text-gray-700 leading-relaxed">
+                                作家。神戸出身。元経営コンサルタントから作家に転身。代表作に『ユダヤ人大富豪の教え』『20代にしておきたい17のこと』『ハッピー・マネー』など。著書累計900万部近く、34カ国語に翻訳されている。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Desktop Layout -->
+            <div class="hidden md:flex items-center gap-8">
+                <div class="w-1/3 relative">
+                    <div class="relative group">
+                        <img src="img/1.jpg" alt="本田健" class="rounded-2xl shadow-2xl w-full transform group-hover:scale-105 transition-all duration-500 luxury-shadow">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-2xl"></div>
+                    </div>
+                </div>
+                <div class="w-2/3">
+                    <div class="bg-gradient-to-br from-white to-blue-50 p-8 rounded-2xl luxury-shadow border border-white/20">
+                        <div class="flex items-center mb-6">
+                            <div class="w-1 h-16 bg-gradient-to-b from-blue-500 to-blue-700 rounded-full mr-4"></div>
+                            <div>
+                                <h2 class="text-4xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">本田健</h2>
+                                <p class="text-blue-600 font-medium text-lg">ベストセラー作家・投資エキスパート</p>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-4 gap-4 mb-6">
+                            <div class="bg-white/70 p-4 rounded-lg border border-blue-100 text-center">
+                                <div class="text-blue-600 text-2xl mb-2">📍</div>
+                                <p class="text-sm text-gray-700 font-medium">神戸出身</p>
+                            </div>
+                            <div class="bg-white/70 p-4 rounded-lg border border-blue-100 text-center">
+                                <div class="text-blue-600 text-2xl mb-2">📚</div>
+                                <p class="text-sm text-gray-700 font-medium">累計900万部</p>
+                            </div>
+                            <div class="bg-white/70 p-4 rounded-lg border border-blue-100 text-center">
+                                <div class="text-blue-600 text-2xl mb-2">🌍</div>
+                                <p class="text-sm text-gray-700 font-medium">34カ国語翻訳</p>
+                            </div>
+                            <div class="bg-white/70 p-4 rounded-lg border border-blue-100 text-center">
+                                <div class="text-blue-600 text-2xl mb-2">💼</div>
+                                <p class="text-sm text-gray-700 font-medium">元経営コンサルタント</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-blue-600 to-blue-700 p-4 rounded-lg text-white mb-4">
+                            <h3 class="font-bold mb-2 text-base">代表作品</h3>
+                            <div class="text-sm space-y-1">
+                                <p>• 『ユダヤ人大富豪の教え』</p>
+                                <p>• 『20代にしておきたい17のこと』</p>
+                                <p>• 『ハッピー・マネー』</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="text-gray-700 leading-relaxed">
+                                作家。神戸出身。元経営コンサルタントから作家に転身。代表作に『ユダヤ人大富豪の教え』『20代にしておきたい17のこと』『ハッピー・マネー』など。著書累計900万部近く、34カ国語に翻訳されている。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-6 md:py-16 bg-gradient-to-b from-white to-gray-50 mobile-compact">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-6 md:mb-12">
+                <h2 class="text-3xl md:text-5xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-3 md:mb-6 mobile-compact-text">株式投資の成功秘訣を習得</h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mobile-compact-text">
+                    多くの投資家は、ニュースや口コミだけで良い株を見つけられると思っています。しかし実際は、この方法では真の機会を逃してしまうことが多いのです！
+                </p>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-3xl p-4 md:p-8 mb-6 md:mb-12 text-white luxury-shadow shine-effect">
+                <div class="grid md:grid-cols-2 gap-4 md:gap-8 text-center">
+                    <div class="glass-effect rounded-2xl p-4 md:p-6">
+                        <div class="text-3xl md:text-5xl font-bold text-yellow-300 mb-1 md:mb-2">77%</div>
+                        <p class="text-sm md:text-lg">推奨銘柄の7月平均上昇率</p>
+                    </div>
+                    <div class="glass-effect rounded-2xl p-4 md:p-6">
+                        <div class="text-3xl md:text-5xl font-bold text-yellow-300 mb-1 md:mb-2">266銘柄</div>
+                        <p class="text-sm md:text-lg">2倍以上の上昇銘柄数</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Urgency Section -->
+            <div class="bg-gradient-to-r from-red-50 to-orange-50 border-2 border-red-200 rounded-2xl p-4 md:p-8 mb-6 md:mb-12 text-center luxury-shadow">
+                <h3 class="text-xl md:text-2xl font-bold text-red-700 mb-2 md:mb-4 mobile-compact-text">限定募集中！</h3>
+                <p class="text-base md:text-lg text-red-600 mb-3 md:mb-4 mobile-compact-text">参加者数23,823名、残り50名の無料枠のみ</p>
+                <button onclick="kkb()" class="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold py-3 md:py-4 px-6 md:px-8 rounded-xl text-lg md:text-xl shadow-lg transform hover:scale-105 transition-all duration-300">
+                    今すぐ枠を確保
+                </button>
+            </div>
+
+            <!-- Benefits Section -->
+            <div class="mb-8 md:mb-16">
+                <h3 class="text-2xl md:text-3xl font-bold text-center bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-6 md:mb-12 mobile-compact-text">オンラインセミナーで得られるもの：</h3>
+                
+                <div class="grid md:grid-cols-3 gap-4 md:gap-8">
+                    <div class="bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-lg p-4 md:p-8 border-t-4 border-blue-500 luxury-shadow">
+                        <div class="text-blue-500 text-3xl md:text-4xl mb-2 md:mb-4">📈</div>
+                        <h4 class="text-lg md:text-xl font-bold mb-2 md:mb-4 mobile-compact-text">毎週厳選銘柄推奨</h4>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            毎週、厳格な分析を経た銘柄リストを共有し、期待収益率10%以上の投資機会を提供します。専門チームが最適な投資機会を特定し、競争で優位に立てるよう支援します。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-white to-green-50 rounded-2xl shadow-lg p-4 md:p-8 border-t-4 border-green-500 luxury-shadow">
+                        <div class="text-green-500 text-3xl md:text-4xl mb-2 md:mb-4">🎯</div>
+                        <h4 class="text-lg md:text-xl font-bold mb-2 md:mb-4 mobile-compact-text">投資戦略・手法の習得</h4>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            銘柄推奨だけでなく、財務健全な企業の株式から利益を得る方法もお教えします。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-white to-orange-50 rounded-2xl shadow-lg p-4 md:p-8 border-t-4 border-orange-500 luxury-shadow">
+                        <div class="text-orange-500 text-3xl md:text-4xl mb-2 md:mb-4">👥</div>
+                        <h4 class="text-lg md:text-xl font-bold mb-2 md:mb-4 mobile-compact-text">同志の投資家との交流</h4>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            コミュニティでは他の投資家と経験を交流し、洞察を共有できます。議論と交流を通じて、貴重な投資のヒントと自信を得ることができます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Section -->
+            <div class="text-center mb-6 md:mb-12">
+                <div class="relative inline-block">
+                    <img src="img/2.jpeg" alt="投資成功" class="rounded-2xl shadow-2xl mx-auto max-w-full luxury-shadow">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900/10 to-transparent rounded-2xl"></div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="text-center mb-8 md:mb-16">
+                <button onclick="kkb()" class="bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:from-green-600 hover:via-green-700 hover:to-green-800 text-white font-bold py-4 md:py-6 px-8 md:px-12 rounded-2xl text-xl md:text-2xl shadow-2xl transform hover:scale-105 transition-all duration-300 shine-effect">
+                    毎週高収益銘柄推奨を取得
+                </button>
+            </div>
+
+            <!-- Social Proof -->
+            <div class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl p-4 md:p-8 mb-6 md:mb-12 luxury-shadow">
+                <h3 class="text-xl md:text-2xl font-bold text-center mb-4 md:mb-8 mobile-compact-text">参加者の声</h3>
+                <div class="grid md:grid-cols-3 gap-3 md:gap-6">
+                    <div class="bg-white p-3 md:p-6 rounded-xl shadow-lg">
+                        <p class="text-gray-600 mb-2 md:mb-4 text-sm md:text-base">「本田健さんの投資アドバイスのおかげで、3ヶ月で30%の利益を得ることができました。」</p>
+                        <p class="font-bold text-blue-600 text-sm md:text-base">- 田中様（東京）</p>
+                    </div>
+                    <div class="bg-white p-3 md:p-6 rounded-xl shadow-lg">
+                        <p class="text-gray-600 mb-2 md:mb-4 text-sm md:text-base">「初心者でも分かりやすい説明で、安心して投資を始められました。」</p>
+                        <p class="font-bold text-blue-600 text-sm md:text-base">- 佐藤様（大阪）</p>
+                    </div>
+                    <div class="bg-white p-3 md:p-6 rounded-xl shadow-lg">
+                        <p class="text-gray-600 mb-2 md:mb-4 text-sm md:text-base">「毎週の株式推薦が本当に役立っています。投資の成功率が格段に上がりました。」</p>
+                        <p class="font-bold text-blue-600 text-sm md:text-base">- 山田様（名古屋）</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final CTA -->
+            <div class="bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 rounded-3xl p-6 md:p-12 text-white text-center luxury-shadow shine-effect">
+                <h3 class="text-2xl md:text-4xl font-bold mb-3 md:mb-6 mobile-compact-text">今すぐ行動し、投資の未来を変えましょう！</h3>
+                <p class="text-lg md:text-xl mb-4 md:mb-8 max-w-2xl mx-auto mobile-compact-text">
+                    もう迷う必要はありません。機会は目の前にあります！下のボタンをクリックして、専門投資家交流コミュニティに参加し、投資成功への道を歩み始めましょう！
+                </p>
+                <button onclick="kkb()" class="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-800 font-bold py-4 md:py-6 px-8 md:px-12 rounded-2xl text-xl md:text-2xl shadow-2xl transform hover:scale-105 transition-all duration-300">
+                    今すぐ参加、高収益銘柄推奨を取得！
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating CTA Button -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 p-3 md:p-4">
+        <button onclick="kkb()" class="w-full bg-gradient-to-r from-red-500 via-red-600 to-red-700 text-white font-bold py-3 md:py-4 px-4 md:px-6 rounded-xl text-base md:text-lg shadow-2xl breathe luxury-shadow">
+            🚀 今すぐ無料参加 - 残り50名限定！
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white py-6 md:py-12 pb-16 md:pb-20">
+        <div class="container mx-auto px-4">
+            <!-- Disclaimer -->
+            <div class="bg-gradient-to-r from-gray-700 to-gray-800 rounded-2xl p-3 md:p-6 mb-4 md:mb-8 luxury-shadow">
+                <h4 class="font-bold mb-2 md:mb-4 text-sm md:text-base">重要な開示事項</h4>
+                <p class="text-xs md:text-sm leading-relaxed text-gray-300">
+                    投資にはリスクが伴います。過去の成果は将来の結果を保証するものではありません。本サービスで提供される情報は投資アドバイスではなく、教育目的のみです。投資決定は自己責任で行ってください。市場の変動により損失が生じる可能性があります。投資前に十分にリスクを理解し、必要に応じて専門家にご相談ください。金融商品取引法に基づき、適切な情報開示を行っています。
+                </p>
+            </div>
+            
+            <!-- 
+            <div class="grid md:grid-cols-3 gap-3 md:gap-6 text-center">
+                <a href="https://www.baidu.com" target="_blank" class="bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-600 hover:to-gray-700 p-3 md:p-4 rounded-xl transition-all duration-300 text-sm md:text-base">
+                    プライバシーポリシー
+                </a>
+                <a href="https://www.baidu.com" target="_blank" class="bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-600 hover:to-gray-700 p-3 md:p-4 rounded-xl transition-all duration-300 text-sm md:text-base">
+                    利用規約
+                </a>
+                <a href="https://www.baidu.com" target="_blank" class="bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-600 hover:to-gray-700 p-3 md:p-4 rounded-xl transition-all duration-300 text-sm md:text-base">
+                    金融商品取引法
+                </a>
+            </div>
+            Links -->
+            <div class="text-center text-gray-400 text-xs md:text-sm mt-4 md:mt-8">
+                <p>&copy; 2024 株式投資成功セミナー. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function kkb() {
+            window.open('https://line.me/', '_blank');
+        }
+
+        // Dark mode detection
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+    </script>
+</body>
+</html>
