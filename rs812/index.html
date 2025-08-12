@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>中田敦彦の投資講座 - 無料で学ぶ株式投資</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'japanese': ['Noto Sans JP', 'sans-serif']
+                    },
+                    colors: {
+                        'primary': '#1e3a8a',
+                        'secondary': '#1e40af',
+                        'accent': '#fbbf24',
+                        'gold': '#fbbf24',
+                        'deep-blue': '#0c1e3d',
+                        'ocean-blue': '#1e3a8a',
+                        'dark-blue': '#1e40af'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        .breathing-btn {
+            animation: breathing 2s ease-in-out infinite;
+        }
+        @keyframes breathing {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0c1e3d 0%, #1e3a8a 100%);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+        }
+        .deep-blue-bg {
+            background: linear-gradient(135deg, #0c1e3d 0%, #1e40af 100%);
+        }
+        .light-blue-bg {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="deep-blue-bg text-white">
+    
+    <!-- Header -->
+    <header class="gradient-bg text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-2xl md:text-3xl font-bold mb-2">中田敦彦の無料投資講座</h1>
+            <p class="text-lg opacity-90">一秒で一億円を稼ぐ男から学ぶ投資の秘密</p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-12 light-blue-bg">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                    小学三年生の時、彼は株式投資を始めた。
+                </h2>
+                <p class="text-xl text-yellow-300 font-semibold">----中田敦彦</p>
+            </div>
+            
+            <div class="flex justify-center mb-8">
+                <img src="img/2.jpg" 
+                     alt="中田敦彦" 
+                     class="rounded-lg shadow-lg max-w-full h-auto w-full md:w-2/3 lg:w-1/2">
+            </div>
+            
+            <div class="text-center">
+                <button onclick="kkb()" class="gold-gradient text-blue-900 px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                    先生のLINEを追加して無料で参加する
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-12 deep-blue-bg">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="light-blue-bg rounded-lg card-shadow p-8 mb-8">
+                    <h3 class="text-2xl md:text-3xl font-bold text-center mb-6 text-yellow-300">
+                        数億万長者になるには、株式投資が必要
+                    </h3>
+                    
+                    <div class="text-lg leading-relaxed space-y-4 text-white">
+                        <p>「お金が大量にシェアされる現代において、インフレーションが年2%のペースで進むのは珍しいことではありません。これは35年で物価が倍になり、現金の価値が半分になる計算です。お金を銀行に預けているだけの人と、効果的に資産管理を行っている人との間で、経済格差はますます広がり、何もしない人はもはや機会損失が大きすぎる時代になりました。</p>
+                        
+                        <p>また、株式の実物と仮想通貨の実物には多くの類似点があるため、株式の知識で参入すれば、私は非常に賛成です。私は将来的に仮想通貨が主流になると思うので、今からしっかり学んでおくのは良いアイディアだと思います。」</p>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <button onclick="kkb()" class="gold-gradient text-blue-900 px-8 py-3 rounded-full text-lg font-semibold hover:opacity-90 transition-all duration-300">
+                            先生のLINEを追加して無料で参加する
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Profile Section -->
+                <div class="light-blue-bg rounded-lg card-shadow p-8 mb-8">
+                    <h3 class="text-2xl font-bold text-center mb-6 text-yellow-300">
+                        「一秒で一億円を稼ぐ男」中田敦彦
+                    </h3>
+                    
+                    <div class="flex justify-center mb-6">
+                        <img src="img/3.jpg" 
+                             alt="中田敦彦プロフィール" 
+                             class="rounded-lg shadow-md w-full md:w-1/2">
+                    </div>
+                    
+                    <div class="text-lg leading-relaxed space-y-4 text-white">
+                        <div class="bg-yellow-600 bg-opacity-20 border-l-4 border-yellow-400 p-4 mb-4">
+                            <p class="font-semibold text-yellow-200">鄭重声明：いかなる費用も徴収しません。私はただあなたを助けたいだけで、この火薬のない戦争の犠牲者にならないようあなたを助けたいのです。</p>
+                        </div>
+                        
+                        <p>株式市場では、時間が経つにつれて多くの経験を積むことができますが、経験が必ずしも成功の秘訣ではありません。株式の購入方法を学び、損失を利益に変え、現在の経済環境にどう対応すればよいかわからない友人たち、</p>
+                        
+                        <p>最後に、一つの真実をお話しします。私は誰も一夜にして金持ちにしたことはありません。それは非現実的ですが、多くの人が正しいお金の稼ぎ方を学ぶのを助けてきました。この方法は約20年間効果が証明されており、あなたにもできるのです。</p>
+                    </div>
+                </div>
+
+                <!-- Learning Content -->
+                <div class="light-blue-bg rounded-lg card-shadow p-8 mb-8">
+                    <h3 class="text-2xl font-bold text-center mb-6 text-yellow-300">
+                        どうすれば富裕層になれるのか？
+                    </h3>
+                    
+                    <p class="text-lg text-center mb-6 text-white">
+                        投資でお金を稼ぎたいなら、まず十分に理解する必要がある内容。
+                    </p>
+                    
+                    <div class="flex justify-center mb-6">
+                        <img src="img/4.jpg" 
+                             alt="投資学習内容" 
+                             class="rounded-lg shadow-md w-full md:w-2/3">
+                    </div>
+                    
+                    <div class="bg-blue-800 bg-opacity-50 rounded-lg p-6 mb-6">
+                        <h4 class="text-xl font-bold mb-4 text-yellow-300">投資技術と基礎知識を学びたい人向け</h4>
+                        <ul class="space-y-3 text-white">
+                            <li class="flex items-start">
+                                <span class="text-yellow-400 mr-2">✓</span>
+                                <span>一年で十倍になる稼げる株式の見つけ方</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-yellow-400 mr-2">✓</span>
+                                <span>100万円で13億円を創造する方法</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-yellow-400 mr-2">✓</span>
+                                <span>投資経験がなくても理解できる投資メカニズム</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-yellow-400 mr-2">✓</span>
+                                <span>投資で数千万円を創造する公式とは</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-yellow-400 mr-2">✓</span>
+                                <span>投資失敗者の六つの共通点</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-yellow-400 mr-2">✓</span>
+                                <span>利率6.5%の定期預金作成方法</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex justify-center mb-6">
+                        <img src="img/5.jpg" 
+                             alt="投資講座詳細" 
+                             class="rounded-lg shadow-md w-full md:w-2/3">
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="gradient-bg rounded-lg p-8 text-white text-center">
+                    <h3 class="text-2xl font-bold mb-4 text-yellow-300">↓無料の投資講座はこちらをクリック↓</h3>
+                    <p class="text-lg mb-6">投資でお金を稼ぐなら、まず上記の無料講座を徹底的に理解してください。</p>
+                    <p class="text-lg mb-8 font-semibold">今なら完全無料で学習できます。</p>
+                    
+                    <div class="flex justify-center mb-6">
+                        <img src="img/6.jpg" 
+                             alt="無料講座" 
+                             class="rounded-lg shadow-md w-full md:w-1/2">
+                    </div>
+                    
+                    <button onclick="kkb()" class="gold-gradient text-blue-900 px-10 py-4 rounded-full text-xl font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        今すぐ無料で参加する
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    <section class="py-12 gradient-bg">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="flex justify-center">
+                    <img src="https://www.jacmsotck.online/415rirenshen/15.jpg" 
+                         alt="中田敦彦最終講座案内" 
+                         class="rounded-lg shadow-xl max-w-full h-auto w-full md:w-2/3 lg:w-1/2">
+                </div>
+            </div>
+        </div>
+    </section>
+	-->
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <!-- Risk Disclosure -->
+            <div class="max-w-4xl mx-auto mb-8">
+                <h3 class="text-lg font-bold mb-4 text-yellow-300">重要な開示とリスク警告</h3>
+                <div class="text-sm text-gray-300 space-y-2 leading-relaxed">
+                    <p>• 投資にはリスクが伴い、元本割れの可能性があります。過去の実績は将来の成果を保証するものではありません。</p>
+                    <p>• 株式投資は市場変動により損失が生じる可能性があります。投資判断は自己責任で行ってください。</p>
+                    <p>• 本サイトの情報は投資の勧誘を目的としたものではありません。投資に関する最終決定は、必ず投資家ご自身の判断で行ってください。</p>
+                    <p>• 金融商品取引業者として関東財務局長（金商）第○○○号に登録されています。</p>
+                    <p>• 当社は金融商品取引法に基づく適切な情報開示を行っています。</p>
+                    <p>• 投資に関するご質問やお困りのことがございましたら、金融庁の金融サービス利用者相談室（0570-016811）にご相談ください。</p>
+                </div>
+            </div>
+            
+            <!-- Links -->
+            <div class="text-center space-y-4">
+               
+                
+                <div class="text-sm text-gray-400">
+                    <p>&copy; 2024 中田敦彦投資講座. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA Button -->
+    <div class="fixed bottom-0 left-0 right-0 p-4 bg-blue-900 shadow-lg border-t border-yellow-400 z-50">
+        <button onclick="kkb()" class="breathing-btn w-full gold-gradient text-blue-900 py-4 rounded-full text-lg font-bold shadow-lg">
+            📱 LINEを追加して今すぐ無料で学ぶ
+        </button>
+    </div>
+
+    <!-- Add bottom padding to prevent content overlap -->
+    <div class="h-20"></div>
+
+    <script>
+        function kkb() {
+            // LINE跳転逻辑
+            window.open('https://line.me/', '_blank');
+        }
+
+        // Dark mode support
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+    </script>
+</body>
+</html>
