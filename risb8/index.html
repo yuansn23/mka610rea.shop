@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本投資情報</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif;
+            background-color: #f5f5f5;
+            overflow-x: hidden;
+            line-height: 1.4;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .disclaimer {
+            background-color: #fff;
+            padding: 10px 15px;
+            font-size: 11px;
+            color: #d32f2f;
+            font-weight: bold;
+            text-align: center;
+            border-top: 2px solid #e0e0e0;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
+
+        .fv-image, .cv-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .cta-container {
+            padding: 20px 15px;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cta-button {
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            animation: breathing 2s ease-in-out infinite;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.02);
+        }
+
+        .cta-button:active {
+            transform: scale(0.98);
+        }
+
+        .cta-image {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes breathing {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+            .container {
+                min-height: 100vh;
+            }
+
+            .disclaimer {
+                padding: 8px 10px;
+                font-size: 10px;
+            }
+
+            .cta-container {
+                padding: 15px 10px;
+            }
+
+            .cta-image {
+                max-width: 280px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .disclaimer {
+                padding: 6px 8px;
+                font-size: 9px;
+            }
+
+            .cta-container {
+                padding: 12px 8px;
+            }
+
+            .cta-image {
+                max-width: 260px;
+            }
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a1a1a;
+            }
+
+            .disclaimer {
+                background-color: #2d2d2d;
+                color: #ff6b6b;
+                border-color: #444;
+            }
+
+            .cta-container {
+                background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Image -->
+        <img src="img/header.png" alt="ヘッダー" class="header-image">
+        
+        <!-- Disclaimer Text -->
+        <div class="disclaimer">
+            本サービスは有価証券等の売買指示を行う投資助言サービスの販売を目的としたものではないため、投資の判断は必ずお客様ご自身で行いますようお願いいたします。
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- FV Image -->
+            <img src="img/fv.png" alt="メインビジュアル" class="fv-image">
+            
+            <!-- CV Before Image -->
+            <img src="img/cv_befor01.png" alt="コンバージョン前" class="cv-image">
+        </div>
+           <div class="main-content">
+            <!-- FV Image -->
+            <img src="img/2.jpg" alt="メインビジュアル" class="fv-image">
+            
+            <!-- CV Before Image --> 
+        </div>
+        <!-- CTA Section -->
+        <div class="cta-container">
+            <div class="cta-button" onclick="m2()">
+                <img src="img/3d.jpg" alt="今すぐ参加" class="cta-image">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // CTA click handler
+        function m2() {
+            // Open QQ.com in new window/tab
+            window.open('https://works.do/50kFAay', '_blank');
+        }
+
+        // Add dark mode support
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+
+        // Add touch feedback for mobile
+        document.querySelector('.cta-button').addEventListener('touchstart', function() {
+            this.style.transform = 'scale(0.95)';
+        });
+
+        document.querySelector('.cta-button').addEventListener('touchend', function() {
+            this.style.transform = '';
+        });
+    </script>
+</body>
+
+</html>
+
+
