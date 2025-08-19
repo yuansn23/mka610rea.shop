@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover True Connections - Start Your Journey to Happiness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#8B5CF6',
+                        'secondary': '#EC4899',
+                        'accent': '#F472B6'
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'breathe': 'breathe 2s ease-in-out infinite',
+                        'float': 'float 6s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        breathe: {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.1)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-gradient {
+            background: linear-gradient(145deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .whatsapp-badge {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-badge:hover {
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .notification-dot {
+            animation: bounce 1s ease-in-out infinite;
+        }
+        
+        .whatsapp-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .image-carousel {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .image-slide {
+            display: none;
+        }
+        
+        .image-slide.active {
+            display: block;
+        }
+        
+        .floating-hearts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        
+        .heart {
+            position: absolute;
+            color: #FF69B4;
+            font-size: 24px;
+            animation: floatUp 4s linear infinite;
+            text-shadow: 0 0 15px rgba(255, 105, 180, 1), 0 0 30px rgba(255, 105, 180, 0.8);
+            filter: brightness(1.5);
+        }
+        
+        @keyframes floatUp {
+            0% {
+                opacity: 1;
+                transform: translateY(100vh) rotate(0deg);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100px) rotate(360deg);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .whatsapp-badge {
+                right: 15px;
+            }
+            .mobile-spacing {
+                padding-top: 1.25rem !important;
+                padding-bottom: 1.25rem !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <!-- WhatsApp Badge -->
+    <div class="whatsapp-badge">
+        <div class="relative">
+            <a href="#contact" onclick="k2()" class="whatsapp-icon bg-green-500 hover:bg-green-600 text-white shadow-lg transition-all duration-300">
+                <i class="fab fa-whatsapp text-2xl"></i>
+            </a>
+            <div class="notification-dot absolute -top-2 -right-2 bg-red-500 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-bold">
+                1
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg relative overflow-hidden" style="min-height: 10vh;">
+        <!-- Floating Hearts -->
+        <div class="floating-hearts">
+            <div class="heart" style="left: 10%; animation-delay: 0s;">♥</div>
+            <div class="heart" style="left: 30%; animation-delay: 1s;">♥</div>
+            <div class="heart" style="left: 70%; animation-delay: 2s;">♥</div>
+            <div class="heart" style="left: 90%; animation-delay: 3s;">♥</div>
+        </div>
+        
+        <div class="relative z-10 container mx-auto px-4 py-8 md:py-16 flex items-center" style="min-height: 10vh;">
+            <div class="max-w-4xl mx-auto text-center text-white">
+                <h1 class="text-4xl md:text-7xl font-bold mb-4 md:mb-6 animate-float">
+                    Discover True Connections
+                </h1>
+                <p class="text-lg md:text-2xl mb-6 md:mb-8 opacity-90 font-light">
+                    Start Your Journey to Happiness
+                </p>
+
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-8 md:py-20 mobile-spacing bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8 md:mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 md:mb-6 gradient-text">
+                    Why Choose Our Platform
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    Experience the future of meaningful connections with our innovative features
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+                <div class="text-center md:text-center p-4 md:p-8 rounded-2xl card-gradient hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="flex md:flex-col items-center mb-4 md:mb-6">
+                        <div class="w-12 md:w-16 h-12 md:h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4 md:mr-0 md:mx-auto md:mb-4">
+                            <i class="fas fa-users text-white text-lg md:text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold">Discover Connections</h3>
+                    </div>
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-300">Daily recommendations of genuine, newly registered members.</p>
+                </div>
+
+                <div class="text-center md:text-center p-4 md:p-8 rounded-2xl card-gradient hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="flex md:flex-col items-center mb-4 md:mb-6">
+                        <div class="w-12 md:w-16 h-12 md:h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4 md:mr-0 md:mx-auto md:mb-4">
+                            <i class="fas fa-shield-alt text-white text-lg md:text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold">Safe and Secure</h3>
+                    </div>
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-300">Profiles are strictly verified to ensure a trustworthy dating experience.</p>
+                </div>
+
+                <div class="text-center md:text-center p-4 md:p-8 rounded-2xl card-gradient hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="flex md:flex-col items-center mb-4 md:mb-6">
+                        <div class="w-12 md:w-16 h-12 md:h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4 md:mr-0 md:mx-auto md:mb-4">
+                            <i class="fas fa-comments text-white text-lg md:text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold">Easy Interaction</h3>
+                    </div>
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-300">Simple chat tools make communication natural and effortless.</p>
+                </div>
+
+                <div class="text-center md:text-center p-4 md:p-8 rounded-2xl card-gradient hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="flex md:flex-col items-center mb-4 md:mb-6">
+                        <div class="w-12 md:w-16 h-12 md:h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4 md:mr-0 md:mx-auto md:mb-4">
+                            <i class="fas fa-heart text-white text-lg md:text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold">Efficient Matching</h3>
+                    </div>
+                    <p class="text-sm md:text-base text-gray-600 dark:text-gray-300">Suggestions based on your interests and lifestyle, helping you meet more compatible people.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-8 md:mt-16">
+                <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+                    Our goal is to help you find the right person and start a meaningful relationship.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="py-8 md:py-20 mobile-spacing bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-900 dark:to-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8 md:mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 md:mb-6 gradient-text">Featured Member</h2>
+                <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300">Connect with amazing people like Selena</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2">
+                            <div class="image-carousel relative">
+                                <div class="image-slide active">
+                                    <img src="img/a1.jpg" alt="Selena 1" class="w-full object-cover">
+                                </div>
+                                <div class="image-slide">
+                                    <img src="img/a2.jpg" alt="Selena 2" class="w-full object-cover">
+                                </div>
+                                <div class="image-slide">
+                                    <img src="img/a3.jpg" alt="Selena 3" class="w-full object-cover">
+                                </div>
+                                <div class="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                    <i class="fas fa-circle text-xs mr-1"></i>Online
+                                </div>
+                                <!-- Navigation dots -->
+                                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                                    <button onclick="k2()" class="w-2 h-2 bg-white rounded-full opacity-50 dot-0"></button>
+                                    <button onclick="k2()" class="w-2 h-2 bg-white rounded-full opacity-50 dot-1"></button>
+                                    <button onclick="k2()" class="w-2 h-2 bg-white rounded-full opacity-50 dot-2"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 p-4 md:p-8">
+                            <div class="mb-4 md:mb-6">
+                                <h3 class="text-2xl md:text-3xl font-bold mb-2">Selena</h3>
+                                <p class="text-gray-600 dark:text-gray-400 mb-2">Hong Kong: Shang Yurong</p>
+                                <div class="flex flex-wrap gap-2 md:gap-4 text-sm text-gray-600 dark:text-gray-400">
+                                    <span><i class="fas fa-birthday-cake mr-1"></i>Age: 31</span>
+                                    <span><i class="fas fa-ruler-vertical mr-1"></i>Height: 161 cm</span>
+                                    <span><i class="fas fa-heart mr-1"></i>Status: Single</span>
+                                </div>
+                            </div>
+
+                            <div class="mb-4 md:mb-6">
+                                <p class="text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed mb-3 md:mb-4">
+                                    I own a women's fashion brand called MUKZIN in Hong Kong, with two boutiques in Kowloon. I love travelling, exploring new projects, and experiencing different cultures.
+                                </p>
+                                <p class="text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed mb-3 md:mb-4">
+                                    I am looking for a partner who is mature, gentle, financially stable, and able to create meaningful moments together. Someone who values emotional support and enjoys building a thoughtful, shared life.
+                                </p>
+                            </div>
+
+                            <div class="mb-4 md:mb-6">
+                                <h4 class="font-semibold mb-2 md:mb-3">Hobbies:</h4>
+                                <div class="flex flex-wrap gap-1 md:gap-2">
+                                    <span class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">Travelling</span>
+                                    <span class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">Yoga</span>
+                                    <span class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">Music</span>
+                                    <span class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">Fashion Design</span>
+                                    <span class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">Swimming</span>
+                                </div>
+                            </div>
+
+                            <button onclick="k2()" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white py-3 md:py-4 rounded-full text-base md:text-lg font-semibold transition-all duration-300 transform hover:scale-105 animate-pulse">
+                                <i class="fab fa-whatsapp mr-2"></i>Contact Her Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-8 md:py-20 mobile-spacing bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8 md:mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 md:mb-6 gradient-text">What Our Users Say</h2>
+                <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300">Real stories from real connections</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-4 md:gap-8">
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-700 dark:to-gray-600 p-4 md:p-8 rounded-2xl">
+                    <div class="flex items-center mb-3 md:mb-4">
+                        <img src="img/b1.jpg" alt="User 1" class="w-10 md:w-12 h-10 md:h-12 rounded-full object-cover mr-3 md:mr-4">
+                        <div>
+                            <div class="flex text-yellow-400 mb-1">
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm md:text-base text-gray-700 dark:text-gray-300 italic">
+                        "I was surprised how easy it was to connect with genuine people here. Great experience!"
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-700 dark:to-gray-600 p-4 md:p-8 rounded-2xl">
+                    <div class="flex items-center mb-3 md:mb-4">
+                        <img src="img/b2.jpg" alt="User 2" class="w-10 md:w-12 h-10 md:h-12 rounded-full object-cover mr-3 md:mr-4">
+                        <div>
+                            <div class="flex text-yellow-400 mb-1">
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm md:text-base text-gray-700 dark:text-gray-300 italic">
+                        "The platform feels safe and simple. I quickly found people who share my interests."
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-700 dark:to-gray-600 p-4 md:p-8 rounded-2xl">
+                    <div class="flex items-center mb-3 md:mb-4">
+                        <img src="img/b3.jpg" alt="User 3" class="w-10 md:w-12 h-10 md:h-12 rounded-full object-cover mr-3 md:mr-4">
+                        <div>
+                            <div class="flex text-yellow-400 mb-1">
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm md:text-base text-gray-700 dark:text-gray-300 italic">
+                        "This site is well-designed and actually works. I've already met some amazing matches."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-8 md:py-20 mobile-spacing gradient-bg">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6">
+                Ready to Find Your Perfect Match?
+            </h2>
+            <p class="text-lg md:text-xl text-white/90 mb-6 md:mb-8 max-w-2xl mx-auto">
+                Join thousands of successful singles who found love through our platform
+            </p>
+            <button onclick="k2()" class="bg-white text-purple-600 px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
+                Start Your Journey Today
+            </button>
+        </div>
+    </section>
+
+   
+
+    <script>
+        // Dark mode detection
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+
+        // Image carousel
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.image-slide');
+        const dots = document.querySelectorAll('.absolute button');
+
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            document.querySelector(`.dot-${currentSlide}`).style.opacity = '0.5';
+            
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+            document.querySelector(`.dot-${currentSlide}`).style.opacity = '1';
+        }
+
+        // Auto slide
+        setInterval(() => {
+            showSlide((currentSlide + 1) % slides.length);
+        }, 3000);
+
+        // Initialize first dot
+        document.querySelector('.dot-0').style.opacity = '1';
+
+        // Smooth scroll function
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        // Modal functions
+        function showContactModal() {
+            document.getElementById('contactModal').classList.remove('hidden');
+            setTimeout(() => {
+                document.querySelector('#contactModal .transform').classList.remove('scale-95');
+                document.querySelector('#contactModal .transform').classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeContactModal() {
+            document.querySelector('#contactModal .transform').classList.remove('scale-100');
+            document.querySelector('#contactModal .transform').classList.add('scale-95');
+            setTimeout(() => {
+                document.getElementById('contactModal').classList.add('hidden');
+            }, 300);
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('contactModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeContactModal();
+            }
+        });
+
+        // k2 function to redirect to www.qq.com
+        function k2() {
+            window.open('https://www.qq.com', '_blank');
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.card-gradient');
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
