@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '541465872357882');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=541465872357882&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Gaming Tips - Elevate Your Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep-blue': '#0f172a',
+                        'midnight': '#1e293b',
+                        'royal': '#1e40af',
+                        'gold': '#fbbf24',
+                        'emerald': '#10b981',
+                    },
+                    fontFamily: {
+                        'display': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'breathe': 'breathe 2s ease-in-out infinite',
+                        'telegram-breathe': 'telegram-breathe 1.5s ease-in-out infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes glow {
+            from { box-shadow: 0 0 20px #fbbf24; }
+            to { box-shadow: 0 0 30px #fbbf24, 0 0 40px #fbbf24; }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes breathe {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes telegram-breathe {
+            0%, 100% { 
+                transform: scale(1);
+                box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+            }
+            50% { 
+                transform: scale(1.1);
+                box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
+            }
+        }
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="font-display text-white">
+    <!-- Dark mode support -->
+    <script>
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center px-4 py-12 md:py-20 overflow-hidden">
+        <!-- Background Effects -->
+        <div class="absolute inset-0 bg-gradient-to-br from-royal/20 via-transparent to-emerald/20"></div>
+        <div class="absolute top-20 left-20 w-72 h-72 bg-royal/10 rounded-full blur-3xl animate-pulse-slow"></div>
+        <div class="absolute bottom-20 right-20 w-96 h-96 bg-emerald/10 rounded-full blur-3xl animate-pulse-slow"></div>
+        
+        <div class="relative z-10 max-w-6xl mx-auto text-center">
+            <!-- Main Headline -->
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight">
+                <span style="font-size: 1.7rem;" class="bg-gradient-to-r from-gold to-emerald bg-clip-text text-transparent">
+                    Get Expert Gaming Tips
+                </span>
+                <br>
+                <span style="font-size: 1.7rem;" class="text-white">Elevate Your Game Level</span>
+                <br>
+                <span class="text-2xl md:text-3xl text-gray-300 font-normal">Zero Risk, Pure Fun</span>
+            </h1>
+
+            <!-- Subheadline -->
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 md:mb-12 max-w-4xl mx-auto leading-relaxed">
+                Here you'll get daily strategies, clever gaming tips and precise insights to make your actions more agile.
+            </p>
+
+            <!-- Countdown Timer -->
+            <div class="mb-8 md:mb-12">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-gold">Limited Time Offer</h3>
+                <div class="flex justify-center items-center space-x-4 md:space-x-8">
+                    <div class="bg-midnight/50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-royal/30">
+                        <div class="text-3xl md:text-5xl font-bold text-gold" id="minutes">30</div>
+                        <div class="text-sm md:text-base text-gray-400">Minutes</div>
+                    </div>
+                    <div class="text-3xl md:text-5xl text-gold">:</div>
+                    <div class="bg-midnight/50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-royal/30">
+                        <div class="text-3xl md:text-5xl font-bold text-gold" id="seconds">00</div>
+                        <div class="text-sm md:text-base text-gray-400">Seconds</div>
+                    </div>
+                </div>
+                <button onclick="d2()" class="group relative bg-gradient-to-r from-emerald to-royal hover:from-royal hover:to-emerald text-white font-bold py-4 px-8 md:py-6 md:px-12 rounded-full text-lg md:text-xl transition-all duration-300 transform hover:scale-105 animate-glow">
+                <span class="relative z-10">Download the app now</span>
+                <div class="absolute inset-0 bg-gradient-to-r from-emerald to-royal opacity-0 group-hover:opacity-100 rounded-full blur transition-opacity duration-300"></div>
+            </button>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="mb-12 animate-float">
+                <img src="img/1.jpg" 
+                     alt="Gaming Strategy" 
+                     class="mx-auto rounded-2xl shadow-2xl max-w-md w-full border border-royal/30">
+            </div>
+
+            <!-- CTA Button -->
+            <button onclick="joinTelegram()" class="group relative bg-gradient-to-r from-emerald to-royal hover:from-royal hover:to-emerald text-white font-bold py-4 px-8 md:py-6 md:px-12 rounded-full text-lg md:text-xl transition-all duration-300 transform hover:scale-105 animate-glow">
+                <span class="relative z-10">🚀 Join Free Telegram Group</span>
+                <div class="absolute inset-0 bg-gradient-to-r from-emerald to-royal opacity-0 group-hover:opacity-100 rounded-full blur transition-opacity duration-300"></div>
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-12 md:py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-3 md:mb-4 text-gold">
+                Why Smart Players Choose Us Daily?
+            </h2>
+            <p class="text-lg md:text-xl text-gray-300 text-center mb-8 md:mb-16 max-w-3xl mx-auto">
+                Join thousands of successful players who trust our expert insights and strategies
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+                <!-- Feature Cards -->
+                <div class="bg-midnight/30 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-royal/20">
+                    <div class="flex items-start md:block">
+                        <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-emerald to-royal rounded-full flex items-center justify-center mr-4 md:mr-0 md:mb-6 flex-shrink-0">
+                            <svg class="w-6 h-6 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-4 text-white">Simple & Easy Tips</h3>
+                            <p class="text-gray-300 text-sm md:text-base">Get straightforward, actionable strategies that work immediately</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-midnight/30 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-royal/20">
+                    <div class="flex items-start md:block">
+                        <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-emerald to-royal rounded-full flex items-center justify-center mr-4 md:mr-0 md:mb-6 flex-shrink-0">
+                            <svg class="w-6 h-6 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-4 text-white">Precise Daily Insights</h3>
+                            <p class="text-gray-300 text-sm md:text-base">Receive expert analysis and market insights every single day</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-midnight/30 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-royal/20">
+                    <div class="flex items-start md:block">
+                        <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-emerald to-royal rounded-full flex items-center justify-center mr-4 md:mr-0 md:mb-6 flex-shrink-0">
+                            <svg class="w-6 h-6 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-4 text-white">Improve Your Gaming Skills</h3>
+                            <p class="text-gray-300 text-sm md:text-base">Level up your gameplay with proven techniques and strategies</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-midnight/30 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-royal/20">
+                    <div class="flex items-start md:block">
+                        <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-emerald to-royal rounded-full flex items-center justify-center mr-4 md:mr-0 md:mb-6 flex-shrink-0">
+                            <svg class="w-6 h-6 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-4 text-white">Friendly Gaming Community</h3>
+                            <p class="text-gray-300 text-sm md:text-base">Connect with like-minded players in our supportive community</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-midnight/30 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-royal/20">
+                    <div class="flex items-start md:block">
+                        <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-emerald to-royal rounded-full flex items-center justify-center mr-4 md:mr-0 md:mb-6 flex-shrink-0">
+                            <svg class="w-6 h-6 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-4 text-white">Learn Advanced Strategies</h3>
+                            <p class="text-gray-300 text-sm md:text-base">Master sophisticated gaming techniques from industry experts</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-midnight/30 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-royal/20">
+                    <div class="flex items-start md:block">
+                        <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-emerald to-royal rounded-full flex items-center justify-center mr-4 md:mr-0 md:mb-6 flex-shrink-0">
+                            <svg class="w-6 h-6 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-4 text-white">Instant Tips & Updates</h3>
+                            <p class="text-gray-300 text-sm md:text-base">Get real-time notifications and immediate strategy updates</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Play Smarter Section -->
+    <section class="py-12 md:py-20 px-4 bg-gradient-to-r from-midnight/50 to-deep-blue/50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-6xl font-bold mb-6 md:mb-8">
+                <span class="bg-gradient-to-r from-gold to-emerald bg-clip-text text-transparent">
+                    Play Smarter, Enjoy More
+                </span>
+            </h2>
+            <p class="text-lg md:text-xl text-gray-300 mb-8 md:mb-12 leading-relaxed">
+                Entertainment-focused learning that makes every session more rewarding and enjoyable
+            </p>
+            
+               <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <div class="group bg-midnight/30 backdrop-blur-sm rounded-2xl p-6 border border-royal/20 hover:border-gold/50 transition-all duration-300">
+                    <img src="img/a1.jpg" 
+                         alt="User Withdrawal 1" 
+                         class="w-full rounded-xl shadow-lg group-hover:transform group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="group bg-midnight/30 backdrop-blur-sm rounded-2xl p-6 border border-royal/20 hover:border-gold/50 transition-all duration-300">
+                    <img src="img/a2.jpg" 
+                         alt="User Withdrawal 2" 
+                         class="w-full rounded-xl shadow-lg group-hover:transform group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="group bg-midnight/30 backdrop-blur-sm rounded-2xl p-6 border border-royal/20 hover:border-gold/50 transition-all duration-300">
+                    <img src="img/a3.jpg" 
+                         alt="User Withdrawal 3" 
+                         class="w-full rounded-xl shadow-lg group-hover:transform group-hover:scale-105 transition-transform duration-300">
+                </div>
+               
+               
+            </div>
+
+            <button onclick="joinTelegram()" class="group relative bg-gradient-to-r from-gold to-emerald hover:from-emerald hover:to-gold text-deep-blue font-bold py-4 px-8 md:py-6 md:px-12 rounded-full text-lg md:text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl">
+                <span class="relative z-10">🎯 Join Free Telegram Group</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- User Withdrawals Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gold">
+                Real User Success Stories
+            </h2>
+            <p class="text-xl text-gray-300 text-center mb-16 max-w-3xl mx-auto">
+                See how our community members are winning with our expert strategies
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <div class="group bg-midnight/30 backdrop-blur-sm rounded-2xl p-6 border border-royal/20 hover:border-gold/50 transition-all duration-300">
+                    <img src="img/y1.jpg" 
+                         alt="User Withdrawal 1" 
+                         class="w-full rounded-xl shadow-lg group-hover:transform group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="group bg-midnight/30 backdrop-blur-sm rounded-2xl p-6 border border-royal/20 hover:border-gold/50 transition-all duration-300">
+                    <img src="img/y2.jpg" 
+                         alt="User Withdrawal 2" 
+                         class="w-full rounded-xl shadow-lg group-hover:transform group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="group bg-midnight/30 backdrop-blur-sm rounded-2xl p-6 border border-royal/20 hover:border-gold/50 transition-all duration-300">
+                    <img src="img/y3.jpg" 
+                         alt="User Withdrawal 3" 
+                         class="w-full rounded-xl shadow-lg group-hover:transform group-hover:scale-105 transition-transform duration-300">
+                </div>
+               
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 px-4 bg-gradient-to-r from-royal/20 to-emerald/20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-white">
+                Ready to Level Up Your Game?
+            </h2>
+            <p class="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
+                Join our free card game tips community and take your gaming level to new heights! 
+                Get daily strategies, clever gaming tips and precise insights to make your actions more agile. 
+                Our friendly gaming community is committed to learning together, sharing and enjoying games - with no risk involved.
+            </p>
+            
+         
+            
+            <p class="text-sm text-gray-400 mt-6">
+                ✨ 100% Free • No Risk • Instant Access
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 border-t border-royal/20 mb-20">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-gray-400">
+                © 2024 Expert Gaming Tips. All rights reserved. Play responsibly.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating Bottom Button -->
+    <div class="fixed bottom-4 left-4 right-4 z-50">
+        <button onclick="joinTelegram()" class="w-full bg-gradient-to-r from-emerald via-royal to-gold text-white font-bold py-4 px-6 rounded-full text-lg shadow-2xl animate-breathe hover:scale-105 transition-transform duration-300">
+            <span class="flex items-center justify-center space-x-2">
+                <span>🚀</span>
+                <span>Join Free Telegram Group - Start Winning Now!</span>
+                <span>🎯</span>
+            </span>
+        </button>
+    </div>
+
+    <!-- Telegram Icon (Right Side) -->
+    <div class="fixed right-6 top-1/2 transform -translate-y-1/2 z-50">
+        <button onclick="joinTelegram()" class="relative bg-blue-500 hover:bg-blue-600 text-white w-16 h-16 rounded-full shadow-2xl animate-telegram-breathe transition-colors duration-300">
+            <!-- Telegram Icon SVG -->
+            <svg class="w-8 h-8 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            </svg>
+            <!-- Notification Badge -->
+            <div class="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-bold animate-pulse">
+                1
+            </div>
+        </button>
+    </div>
+
+    <script>
+        // Countdown Timer
+        let timeLeft = 30 * 60; // 30 minutes in seconds
+
+        function updateCountdown() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            
+            if (timeLeft > 0) {
+                timeLeft--;
+            } else {
+                timeLeft = 30 * 60; // Reset to 30 minutes
+            }
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+
+        // Telegram Join Function
+        function joinTelegram() {
+            // Add your Telegram group link here
+            window.open('https://t.me/+ZHlUY3AyiZZmZjI1', '_blank');
+        }
+  function d2() {
+            // Add your Telegram group link here
+            window.open('https://app.adjust.com/1re0sjlt?redirect=https%3A%2F%2Fplay.xaouw.world%2F', '_blank');
+        }
+        // Smooth scroll for any internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add parallax effect to background elements
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelectorAll('.animate-float');
+            const speed = 0.5;
+
+            parallax.forEach(element => {
+                const yPos = -(scrolled * speed);
+                element.style.transform = `translateY(${yPos}px)`;
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
