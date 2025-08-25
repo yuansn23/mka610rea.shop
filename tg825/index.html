@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram超级奖励计划 - 注册立得5美元，邀请狂赚999刀！</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5D5CDE',
+                        telegram: '#0088cc'
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 2s infinite',
+                        'pulse-slow': 'pulse 3s infinite',
+                        'float': 'float 3s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        }
+                    }
+                }
+            },
+            darkMode: 'class'
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .dark .gradient-bg {
+            background: linear-gradient(135deg, #2D1B69 0%, #11998e 100%);
+        }
+        
+        .glass-effect {
+            backdrop-filter: blur(16px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .dark .glass-effect {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dark .card-hover:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-all duration-300">
+    <!-- 深色模式检测脚本 -->
+    <script>
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+    </script>
+
+    <!-- 头部横幅 -->
+    <div class="gradient-bg text-white py-3 px-4 text-center">
+        <div class="flex items-center justify-center space-x-2">
+            <span class="animate-pulse">🚀</span>
+            <span class="font-bold text-sm md:text-base">史上最强Telegram拉新风暴！仅剩15天！</span>
+            <span class="animate-pulse">🚀</span>
+        </div>
+    </div>
+
+    <!-- 主要内容 -->
+    <div class="min-h-screen">
+        <!-- 英雄区域 -->
+        <section class="relative py-12 md:py-20 px-4 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
+            
+            <div class="max-w-6xl mx-auto text-center relative z-10">
+                <div class="animate-float mb-8">
+                    <div class="inline-block p-6 bg-white dark:bg-gray-800 rounded-full shadow-2xl">
+                        <svg class="w-16 h-16 text-telegram" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                    史上最强Telegram拉新风暴
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-4xl mx-auto">
+                    注册立得<span class="font-bold text-green-500">5美元</span>，邀请好友狂赚<span class="font-bold text-green-500">999刀</span>！PayPal极速到账！
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                    <a href="https://t.me/super_invite_999" 
+                       class="inline-flex items-center px-8 py-4 bg-primary hover:bg-blue-700 text-white font-bold rounded-lg shadow-lg transform transition-all duration-200 hover:scale-105 text-lg">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                        立即注册赚钱
+                    </a>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                        ✅ 已有8,542人成功收款
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 重磅消息区域 -->
+        <section class="py-16 px-4 bg-white dark:bg-gray-900">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">
+                        💥 重磅消息！
+                    </h2>
+                    
+                    <div class="mb-8">
+                        <img src="img/1.jpg" 
+                             alt="成功用户展示" 
+                             class="w-80 h-60 mx-auto rounded-xl shadow-lg object-cover"
+                             onerror="this.style.display='none'">
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 p-6 rounded-xl border-l-4 border-green-500">
+                            <h3 class="font-bold text-lg mb-2 text-green-700 dark:text-green-400">Telegram全球推广计划全面升级！</h3>
+                            <p class="text-gray-600 dark:text-gray-300">现在注册立即获得5美元奖励！邀请好友每人10美元奖励！</p>
+                        </div>
+                        <div class="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 p-6 rounded-xl border-l-4 border-purple-500">
+                            <h3 class="font-bold text-lg mb-2 text-purple-700 dark:text-purple-400">24小时PayPal自动打款</h3>
+                            <p class="text-gray-600 dark:text-gray-300">累计最高可获得999美元现金奖励！全球用户均可参与！</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 p-6 bg-yellow-50 dark:bg-yellow-900/20 rounded-xl border border-yellow-200 dark:border-yellow-700">
+                        <p class="text-lg font-semibold text-yellow-800 dark:text-yellow-300">
+                            🎉 已成功支付超过10,000笔奖励，真实可靠！
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 超级奖励计划 -->
+        <section class="py-16 px-4 bg-gray-50 dark:bg-gray-800">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+                    🌟 超级奖励计划
+                </h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <div class="card-hover bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-2xl">🎯</span>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">新用户奖励</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4">通过专属链接注册即得</p>
+                            <div class="text-3xl font-bold text-green-500">5美元</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-2xl">🎯</span>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">邀请奖励</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4">每成功邀请1位好友获得</p>
+                            <div class="text-3xl font-bold text-purple-500">10美元</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg md:col-span-2 lg:col-span-1">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gradient-to-r from-yellow-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-2xl">🏆</span>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">最高累计奖励</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4">邀请满100人可达</p>
+                            <div class="text-3xl font-bold text-red-500">999美元</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <h4 class="font-bold text-lg mb-4 flex items-center">
+                            <span class="text-2xl mr-2">💰</span>
+                            阶梯奖励详情
+                        </h4>
+                        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+                            <li class="flex justify-between">
+                                <span>邀请满50人</span>
+                                <span class="font-bold text-green-500">额外奖励100美元</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>邀请满100人</span>
+                                <span class="font-bold text-green-500">再得500美元</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <h4 class="font-bold text-lg mb-4 flex items-center">
+                            <span class="text-2xl mr-2">⚡</span>
+                            支付信息
+                        </h4>
+                        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+                            <li>✅ 24小时内自动打款</li>
+                            <li>✅ 支持查询到账记录</li>
+                            <li>✅ 活动经Telegram官方认证</li>
+                            <li>✅ 无任何隐藏费用</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 奖励结构表格 -->
+        <section class="py-16 px-4 bg-white dark:bg-gray-900">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+                    💰 奖励结构详解
+                </h2>
+                
+                <div class="mb-8 text-center">
+                    <img src="img/2.jpg" 
+                         alt="奖励展示" 
+                         class="w-80 h-60 mx-auto rounded-xl shadow-lg object-cover"
+                         onerror="this.style.display='none'">
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                        <thead class="bg-gradient-to-r from-primary to-purple-600 text-white">
+                            <tr>
+                                <th class="px-6 py-4 text-left font-bold">邀请人数</th>
+                                <th class="px-6 py-4 text-left font-bold">基础奖励</th>
+                                <th class="px-6 py-4 text-left font-bold">额外奖励</th>
+                                <th class="px-6 py-4 text-left font-bold">累计收益</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+                            <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                                <td class="px-6 py-4 font-medium">1人</td>
+                                <td class="px-6 py-4 text-green-600 font-bold">10美元</td>
+                                <td class="px-6 py-4">-</td>
+                                <td class="px-6 py-4 text-blue-600 font-bold">15美元</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                                <td class="px-6 py-4 font-medium">10人</td>
+                                <td class="px-6 py-4 text-green-600 font-bold">100美元</td>
+                                <td class="px-6 py-4">-</td>
+                                <td class="px-6 py-4 text-blue-600 font-bold">105美元</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                                <td class="px-6 py-4 font-medium">50人</td>
+                                <td class="px-6 py-4 text-green-600 font-bold">500美元</td>
+                                <td class="px-6 py-4 text-purple-600 font-bold">100美元</td>
+                                <td class="px-6 py-4 text-blue-600 font-bold">605美元</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                                <td class="px-6 py-4 font-medium">100人</td>
+                                <td class="px-6 py-4 text-green-600 font-bold">1000美元</td>
+                                <td class="px-6 py-4 text-purple-600 font-bold">500美元</td>
+                                <td class="px-6 py-4 text-blue-600 font-bold">1999美元</td>
+                            </tr>
+                            <tr class="bg-yellow-50 dark:bg-yellow-900/20 hover:bg-yellow-100 dark:hover:bg-yellow-900/30 transition-colors">
+                                <td class="px-6 py-4 font-bold">封顶奖励</td>
+                                <td class="px-6 py-4">-</td>
+                                <td class="px-6 py-4">-</td>
+                                <td class="px-6 py-4 text-red-600 font-bold text-xl">999美元</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 参与步骤 -->
+        <section class="py-16 px-4 bg-gray-50 dark:bg-gray-800">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+                    🎯 参与步骤
+                </h2>
+                
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4 bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                            1
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">点击专属链接注册</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-3">使用专属链接注册Telegram账号</p>
+                            <a href="https://t.me/super_invite_999" 
+                               class="inline-flex items-center text-primary hover:text-blue-700 font-medium">
+                                🔗 https://t.me/super_invite_999
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4 bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-green-500 to-teal-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                            2
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">完成账号验证</h3>
+                            <ul class="text-gray-600 dark:text-gray-300 space-y-1">
+                                <li>• 使用实名认证手机号</li>
+                                <li>• 完成基础信息设置</li>
+                                <li>• 保持账号活跃24小时</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4 bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-yellow-500 to-orange-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                            3
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">提交奖励申请</h3>
+                            <ul class="text-gray-600 dark:text-gray-300 space-y-1">
+                                <li>• 添加审核机器人 @super_reward_bot</li>
+                                <li>• 发送注册截图</li>
+                                <li>• 提供PayPal收款账号</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4 bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                            4
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">邀请好友赚更多</h3>
+                            <ul class="text-gray-600 dark:text-gray-300 space-y-1">
+                                <li>• 获取专属邀请链接</li>
+                                <li>• 分享给好友注册</li>
+                                <li>• 实时追踪奖励进度</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 用户见证 -->
+        <section class="py-16 px-4 bg-white dark:bg-gray-900">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+                    🌍 全球用户见证
+                </h2>
+                
+
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">
+                                D
+                            </div>
+                            <div>
+                                <p class="text-gray-600 dark:text-gray-300 mb-2">"昨天刚收到999美元奖励！不敢相信这是真的！"</p>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    @David_NY 🇺🇸
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">
+                                S
+                            </div>
+                            <div>
+                                <p class="text-gray-600 dark:text-gray-300 mb-2">"邀请87位朋友，获得870美元奖励，太惊喜了！"</p>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    @Sophia_London 🇬🇧
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">
+                                张
+                            </div>
+                            <div>
+                                <p class="text-gray-600 dark:text-gray-300 mb-2">"国内用户也能轻松参与，PayPal到账很快"</p>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    @Zhang_Beijing 🇨🇳
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-white font-bold">
+                                A
+                            </div>
+                            <div>
+                                <p class="text-gray-600 dark:text-gray-300 mb-2">"活动完全真实，已经推荐给所有朋友"</p>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    @Anna_Sydney 🇦🇺
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section class="py-16 px-4 bg-gray-50 dark:bg-gray-800">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+                    ❓ 常见问题
+                </h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <h3 class="font-bold text-lg mb-2 text-primary">Q：奖励如何发放？</h3>
+                        <p class="text-gray-600 dark:text-gray-300">A：通过PayPal每日20:00统一发放前24小时奖励</p>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <h3 class="font-bold text-lg mb-2 text-primary">Q：需要满足什么条件？</h3>
+                        <p class="text-gray-600 dark:text-gray-300">A：需使用实名手机号注册并保持账号活跃24小时</p>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <h3 class="font-bold text-lg mb-2 text-primary">Q：奖励有上限吗？</h3>
+                        <p class="text-gray-600 dark:text-gray-300">A：单人最高奖励999美元</p>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <h3 class="font-bold text-lg mb-2 text-primary">Q：活动到什么时候？</h3>
+                        <p class="text-gray-600 dark:text-gray-300">A：本季度有效，额满即止</p>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <h3 class="font-bold text-lg mb-2 text-primary">Q：如何查询奖励进度？</h3>
+                        <p class="text-gray-600 dark:text-gray-300">A：联系 @reward_query_bot 查询实时进度</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系信息和CTA -->
+        <section class="py-16 px-4 bg-gradient-to-r from-primary to-purple-600 text-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">
+                    🚀 立即参与
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="glass-effect p-6 rounded-xl">
+                        <h3 class="font-bold text-lg mb-4">📌 重要链接</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li>📞 客服支持：@super_support_robot</li>
+                            <li>📊 奖励证明：@success_stories_channel</li>
+                            <li>💰 收款查询：@payment_status_bot</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="glass-effect p-6 rounded-xl">
+                        <h3 class="font-bold text-lg mb-4">💡 温馨提示</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li>建议使用常用手机号注册</li>
+                            <li>确保PayPal账号能正常收款</li>
+                            <li>保留注册截图以备核查</li>
+                            <li>及时查询奖励到账情况</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur p-8 rounded-xl mb-8">
+                    <h3 class="text-2xl font-bold mb-4">⏰ 活动倒计时：仅剩最后15天！</h3>
+                    <p class="text-lg mb-6">PayPal收款账号：payments@telegrampromo.com</p>
+                    <p class="text-sm">处理时间：每日20:00统一处理前24小时申请</p>
+                </div>
+                
+                <a href="https://t.me/super_invite_999" 
+                   class="inline-flex items-center px-12 py-4 bg-white text-primary hover:bg-gray-100 font-bold rounded-lg shadow-xl transform transition-all duration-200 hover:scale-105 text-xl">
+                    <svg class="w-8 h-8 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                    </svg>
+                    立即注册，开启赚钱之旅！
+                </a>
+                
+                <p class="text-3xl font-bold mt-8 animate-pulse">
+                    💰 999美元奖励等你来拿！💰
+                </p>
+            </div>
+        </section>
+
+        <!-- 重要声明 -->
+        <section class="py-8 px-4 bg-gray-900 text-white">
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-green-400">✅ 活动保障</h3>
+                        <ul class="space-y-2 text-sm text-gray-300">
+                            <li>✅ 100%真实奖励，已有8,542人成功收款</li>
+                            <li>✅ 24小时内自动打款，支持查询到账记录</li>
+                            <li>✅ 活动经Telegram官方认证</li>
+                            <li>✅ 无任何隐藏费用或要求</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-red-400">🔞 禁止行为</h3>
+                        <ul class="space-y-2 text-sm text-gray-300">
+                            <li>- 使用虚假账号注册</li>
+                            <li>- 利用技术手段作弊</li>
+                            <li>- 重复注册领取奖励</li>
+                            <li>- 使用非本人PayPal账号</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
