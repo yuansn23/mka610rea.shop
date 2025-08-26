@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+<script>
+ function h2() {
+             window.location.href="https://www.qq.com";
+        }
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deutsche Aktien-Gemeinschaft</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0f1729',
+                        secondary: '#1e293b',
+                        accent: '#f59e0b',
+                        highlight: '#10b981',
+                        dark: '#020617',
+                        gold: '#fbbf24',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #020617 0%, #0f1729 50%, #1e293b 100%);
+        }
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .deep-card {
+            background: linear-gradient(145deg, #1e293b, #334155);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .hover-scale {
+            transition: all 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: translateY(-3px);
+        }
+        .pulse-gold {
+            animation: pulseGold 2s ease-in-out infinite;
+        }
+        @keyframes pulseGold {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 20px rgba(251, 191, 36, 0.3); }
+            50% { transform: scale(1.05); box-shadow: 0 0 30px rgba(251, 191, 36, 0.5); }
+        }
+        .number-ticker {
+            font-variant-numeric: tabular-nums;
+            font-feature-settings: "tnum";
+        }
+        .countdown-glow {
+            text-shadow: 0 0 10px rgba(251, 191, 36, 0.8);
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="font-sans bg-primary text-white overflow-x-hidden">
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center gradient-bg">
+        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+        
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.1"><path d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/></g></g></svg>'); background-size: 60px 60px;"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 md:px-6 max-w-6xl mx-auto fade-in">
+            <!-- Hero Image -->
+            <div class="mb-6 md:mb-12">
+                <img src="img/1.jpg" alt="Aktienprognosen" class="w-full max-w-4xl mx-auto object-cover rounded-xl md:rounded-2xl shadow-2xl border-2 border-gold border-opacity-30">
+            </div>
+
+            <!-- Main Content -->
+            <div class="space-y-6 md:space-y-12 pb-20 md:pb-8">
+                <!-- Main Message -->
+                <div class="deep-card p-4 md:p-8 rounded-xl md:rounded-2xl">
+                    <p class="text-lg md:text-3xl text-white leading-relaxed font-medium">
+                        Gemeinsam mit zahlreichen Investoren können Sie mit unseren professionellen Aktienprognosen attraktive Renditen erzielen.
+                    </p>
+                </div>
+
+                <!-- Social Proof -->
+                <div class="deep-card p-4 md:p-8 rounded-xl md:rounded-2xl">
+                    <div class="flex items-center justify-center space-x-4 mb-4 md:mb-6">
+                        <div class="flex -space-x-2">
+                            <div class="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-gold to-accent rounded-full border-2 border-white flex items-center justify-center">
+                                <span class="text-white font-bold text-sm md:text-base">👥</span>
+                            </div>
+                            <div class="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-highlight to-blue-500 rounded-full border-2 border-white flex items-center justify-center">
+                                <span class="text-white font-bold text-sm md:text-base">📈</span>
+                            </div>
+                            <div class="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full border-2 border-white flex items-center justify-center">
+                                <span class="text-white font-bold text-sm md:text-base">💰</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-lg md:text-2xl text-gold font-semibold">
+                        Diese Woche haben sich bereits <span class="text-xl md:text-3xl font-bold number-ticker">8.271</span> Personen angeschlossen
+                    </p>
+                </div>
+
+                <!-- Urgency Message -->
+                <div class="deep-card p-4 md:p-8 rounded-xl md:rounded-2xl">
+                    <p class="text-lg md:text-2xl text-red-400 font-semibold mb-4 md:mb-8">
+                        Der zeitlich begrenzte Zugang zu unseren hochwertigen Aktieneinblicken endet sehr bald:
+                    </p>
+
+                    <!-- Countdown Timer -->
+                    <div class="grid grid-cols-4 gap-2 md:gap-8 mb-4 md:mb-8">
+                        <div class="text-center">
+                            <div class="bg-gradient-to-b from-gold to-accent p-2 md:p-6 rounded-lg md:rounded-xl mb-1 md:mb-2">
+                                <div id="days" class="text-xl md:text-5xl font-bold text-primary countdown-glow">02</div>
+                            </div>
+                            <p class="text-xs md:text-base text-gray-300 font-medium">Tage</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-gradient-to-b from-gold to-accent p-2 md:p-6 rounded-lg md:rounded-xl mb-1 md:mb-2">
+                                <div id="hours" class="text-xl md:text-5xl font-bold text-primary countdown-glow">00</div>
+                            </div>
+                            <p class="text-xs md:text-base text-gray-300 font-medium">Stunden</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-gradient-to-b from-gold to-accent p-2 md:p-6 rounded-lg md:rounded-xl mb-1 md:mb-2">
+                                <div id="minutes" class="text-xl md:text-5xl font-bold text-primary countdown-glow">00</div>
+                            </div>
+                            <p class="text-xs md:text-base text-gray-300 font-medium">Minuten</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-gradient-to-b from-gold to-accent p-2 md:p-6 rounded-lg md:rounded-xl mb-1 md:mb-2">
+                                <div id="seconds" class="text-xl md:text-5xl font-bold text-primary countdown-glow">00</div>
+                            </div>
+                            <p class="text-xs md:text-base text-gray-300 font-medium">Sekunden</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Button Desktop -->
+                <button onclick="h2()" class="hidden md:block bg-gradient-to-r from-gold to-accent text-primary px-12 py-6 rounded-full text-2xl md:text-3xl font-bold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 pulse-gold">
+                    <span class="flex items-center justify-center space-x-3">
+                        <span>💎</span>
+                        <span>Jetzt beitreten</span>
+                        <span>🚀</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Floating CTA Button -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 p-4 bg-gradient-to-t from-primary via-primary to-transparent">
+        <button onclick="h2()" class="w-full bg-gradient-to-r from-gold to-accent text-primary py-4 rounded-full text-lg font-bold hover:shadow-2xl transform active:scale-95 transition-all duration-300 pulse-gold">
+            <span class="whitespace-nowrap">💎 Jetzt beitreten 🚀</span>
+        </button>
+    </div>
+
+    <script>
+        // Dark mode detection
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+
+        // Countdown Timer
+        function updateCountdown() {
+            // Set countdown to 2 days from now
+            const now = new Date().getTime();
+            const targetDate = now + (2 * 24 * 60 * 60 * 1000); // 2 days in milliseconds
+            
+            const interval = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = targetDate - now;
+                
+                if (distance < 0) {
+                    clearInterval(interval);
+                    document.getElementById("days").innerHTML = "00";
+                    document.getElementById("hours").innerHTML = "00";
+                    document.getElementById("minutes").innerHTML = "00";
+                    document.getElementById("seconds").innerHTML = "00";
+                    return;
+                }
+                
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+                document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+                document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+                document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+            }, 1000);
+        }
+
+        // Action button redirect
+       
+
+        // Initialize countdown on page load
+        window.addEventListener('load', function() {
+            updateCountdown();
+        });
+
+        // Number ticker animation for social proof
+        function animateNumber() {
+            const numberElement = document.querySelector('.number-ticker');
+            let currentNumber = 8271;
+            const increment = Math.floor(Math.random() * 5) + 1;
+            
+            setInterval(() => {
+                currentNumber += increment;
+                numberElement.textContent = currentNumber.toLocaleString('de-DE');
+            }, 3000);
+        }
+
+        // Start number animation
+        setTimeout(animateNumber, 2000);
+    </script>
+</body>
+</html>
