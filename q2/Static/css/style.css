@@ -30,6 +30,9 @@ html {
     display: block;
 }
 
+img.app-Tutorial {
+    max-width: 178px;
+}
 .ios-top-img {
     max-width: 100%;
     height: auto;
@@ -131,12 +134,7 @@ html {
 }
 
 
-/* .step-title {
-    font-size: 14px;
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 24px;
-} */
+
 
 .step-title {
     font-size: 14px;
@@ -165,34 +163,6 @@ html {
     margin-bottom: 20px;
 }
 
-
-
-
-
-/* .ios-app-stores {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 11px;
-    padding: 24px 10px 24px 10px;
-    background-color: aliceblue;
-    border-radius: .75rem;
-} */
-
-.ios-app-stores {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 28px;
-    padding: 24px 10px 24px 10px;
-    background-color: aliceblue;
-    border-radius: .75rem;
-}
-
-
-.ios-app-stores .app-item {
-    text-align: center;
-}
 
 .ios-app-stores .app-item .app-icon {
     width: 60px;
@@ -323,7 +293,7 @@ img.android-top-LOGO-img {
 .top-logo {
     position: absolute;
     margin-left: 1rem;
-    margin-top: 0.4rem;
+    margin-top: 1rem;
 }
 
 .carousel {
@@ -577,3 +547,29 @@ img.ios-Tutorial-img {
     background: #ffb2f1;
 }
 
+
+
+.ios-app-stores {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    gap: 8px;               
+    background-color: aliceblue;
+    border-radius: .75rem;
+    max-width: 100%;          
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.ios-app-stores .app-item {
+    flex: 1 1 0;             
+    max-width: 50%;          
+    text-align: center;
+}
+
+img.app-Tutorial {
+    width: 100%;            
+    height: auto;           
+    object-fit: contain;     
+    border-radius: .75rem; 
+}
