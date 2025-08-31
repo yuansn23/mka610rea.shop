@@ -1,0 +1,575 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    -webkit-text-size-adjust: 100%;
+}
+
+#android-page {
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+
+
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: #20232b;
+    min-height: 100vh;
+    padding-bottom: 20px;
+}
+
+.top-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+img.app-Tutorial {
+    max-width: 178px;
+}
+.ios-top-img {
+    max-width: 100%;
+    height: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.android-top-img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    margin-bottom: 16px;
+}
+
+.button-group .btn {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-size: 16px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffd7ba;
+    transition: all 0.3s ease;
+}
+
+.button-group .btn.primary {
+    background: linear-gradient(to right, #e8a270, #c88151);
+    color: #fff;
+    border-color: transparent;
+}
+
+.android-download-btn-container {
+    text-align: center;
+    padding: 20px 0;
+    animation: animationScale-1188aeb9 2s ease-out infinite;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    max-width: 86%;
+    margin: 0 auto;
+    background-image: url('../img/android/b-startdown.webp');
+}
+.android-download-btn {
+    background: linear-gradient(to right, #7957d1, #a989f5);
+    color: #fff;
+    padding: 15px 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(121, 87, 209, 0.5);
+    transition: all 0.3s ease;
+}
+
+@keyframes animationScale-1188aeb9 {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.05)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.anti-fraud-notice {
+    padding: 6px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+
+.anti-fraud-notice.android {
+    color: #ffb2f1;
+    padding: 10px 15px;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 36px;
+}
+
+.guide-section {
+    margin: 0 20px auto;
+}
+
+
+
+
+.step-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 16px;
+    display: flex;        
+    align-items: flex-start; 
+    gap: 3.5px;               
+    white-space: normal;   
+    word-break: break-word; 
+    line-height: 1.5;
+}
+
+.step-title span:first-child {
+    flex: 0 0 45px;        
+    display: inline-block;   
+}
+
+.step-title-install-text {
+    flex: 1;
+    text-align: left;
+}
+
+.step {
+    margin-bottom: 20px;
+}
+
+
+.ios-app-stores .app-item .app-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+}
+
+.ios-app-stores .app-item span {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666;
+}
+
+.ios-download-btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ios-download-btn-group .ios-btn {
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+
+.ios-download-btn-group .ios-btn.main {
+    background: #ffcc00;
+    font-weight: bold;
+}
+
+
+
+.ios-step2-list {
+    counter-reset: step;
+    background-color: aliceblue;
+    border-radius: .75rem;
+    padding: 24px 14px;
+    margin: 0;
+}
+
+.ios-step2-list>li {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 3ch 1fr;
+    column-gap: 12px;
+    align-items: start;
+    margin: 0 0 10px 0;
+    text-align: left;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #555;
+    word-break: break-word;
+}
+
+.ios-step2-list>li::before {
+    counter-increment: step;
+    content: counter(step) ".";
+    justify-self: end;
+    font-weight: bold;
+}
+
+
+.android-tabs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 38px;
+    justify-content: center;
+    top: 40px;
+    position: relative;
+}
+
+
+
+.android-tabs .tab {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: .2rem .2rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.android-tabs .tab img {
+    width: 24px;            
+    height: 24px;
+    object-fit: contain;
+}
+
+.android-tabs .tab.active {
+    box-shadow: 0 0 0 1px #ffb2f1;
+}
+
+.android-guide-content {
+    display: none;
+}
+
+.android-guide-content.active {
+    display: block;
+}
+
+.android-security-scan {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.android-security-scan img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+img.android-top-LOGO-img {
+    width: 85%;
+}
+
+.top-logo {
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 346px;
+    margin: 25px auto;
+    overflow: hidden;
+}
+
+.carousel .slide {
+    position: relative;
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.carousel .slide.active {
+    display: block;
+}
+
+.carousel .slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.carousel .slide>div:first-child {
+    display: flex;
+    align-items: flex-start;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.carousel .slide>div:first-child>div:first-child {
+    display: flex;
+    align-items: baseline;
+    margin-right: 16px;
+}
+
+.carousel .slide>div:first-child>div:first-child span:nth-child(1) {
+    color: #ffb2f1;
+    font-size: 14px;
+}
+
+.carousel .slide>div:first-child>div:first-child span:nth-child(2) {
+    color: #ffb2f1;
+    font-size: x-large;
+    margin-left: 2px;
+}
+
+.carousel .slide>div:first-child>div:nth-child(2) {
+    flex: 1;
+    text-align: left;
+    font-size: 14px;
+}
+
+
+.carousel .slide .step-title {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+.icon-cp {
+    position: relative;
+    top: .01rem;
+    margin-right: .04rem;
+    width: .3rem;
+    height: .14rem;
+    fill: #7b42ff;
+}
+
+.text-primary {
+    color: #7b42ff;
+}
+
+.text-white.text-13.flex-1 {
+    font-size: 13px;
+}
+
+
+.android-guide-content {
+    position: relative;
+    overflow: hidden;
+}
+
+span.sep {
+    color: #7b42ff;
+    display: inline-block;
+    vertical-align: baseline;
+    top: -4px;
+    position: relative;
+}
+
+span.num {
+    color: #7b42ff;
+    font-size: x-large;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.text-primary {
+    color: #7b42ff;
+
+}
+
+.bottom {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    background-color: #272b34;
+    border-radius: 1.14rem;
+    z-index: 1;
+    position: relative;
+    height: -webkit-fill-available;
+}
+
+.horizontal::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #713fe8;
+    margin-bottom: 10px;
+}
+
+
+
+.guide-section h3 {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0;
+}
+
+.guide-section {
+    text-align: center;
+}
+
+
+
+img.ios-Tutorial-img {
+    width: -webkit-fill-available;
+}
+
+
+.teaching {
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    background-image: url(../img/android/title.png);
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    height: 50px;
+    margin: -2rem auto;
+    z-index: 2;
+    position: relative;
+}
+
+
+
+
+
+.guide-section h3 {
+    position: relative;
+    display: inline-block;
+}
+
+@supports (-webkit-touch-callout: none) {
+    .guide-section h3::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 87%;
+        height: 5px;
+        background-color: #ffb2f1;
+        transform: translateX(-50%);
+    }
+}
+
+
+.guide-section h3.ios-line::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 87%;
+    height: 3px;
+    background-color: #ffb2f1;
+    transform: translateX(-50%);
+}
+
+.tag {
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    background-image: url(../img/android/tag.webp);
+    background-position: center center;
+    padding-bottom: 1.7rem;
+    padding-right: .08rem;
+    right: -5.55rem;
+    position: relative;
+    min-width: 5.84rem;
+    top: -2.6rem;
+    height: .5rem;
+    display: none;
+}
+
+
+
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel .slides-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.carousel .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+.indicators .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.indicators .dot.active {
+    background: #ffb2f1;
+}
+
+
+
+.ios-app-stores {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    gap: 8px;               
+    background-color: aliceblue;
+    border-radius: .75rem;
+    max-width: 100%;          
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.ios-app-stores .app-item {
+    flex: 1 1 0;             
+    max-width: 50%;          
+    text-align: center;
+}
+
+img.app-Tutorial {
+    width: 100%;            
+    height: auto;           
+    object-fit: contain;     
+    border-radius: .75rem; 
+}
