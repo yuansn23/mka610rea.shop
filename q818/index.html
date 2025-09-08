@@ -2,23 +2,79 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-  <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '814133021299381');
-fbq('track', 'PageView');
+  <script>
+(function(){
+  /* === SETTINGS (edit if needed) === */
+  var PIXEL_ID        = '1968348223921982';  // आपका Meta Pixel ID
+  var WA_LINK         = 'https://whatsapp.com/channel/0029Vb5OVDTJ93wXR87QFD1a'; // आपका channel link
+  var CLICK_DELAY_MS  = 350;                 // 300–500ms best
+  var AUTO_LOAD_PIXEL = true;                // Pixel auto-load करेगा (क्योंकि अभी लगा नहीं है)
+
+  /* === Load Meta Pixel (one-time) === */
+  function loadPixel(cb){
+    if (window.fbq){ cb && cb(); return; }
+    if (!AUTO_LOAD_PIXEL){ cb && cb(); return; }
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+      (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    try{ fbq('init', PIXEL_ID); fbq('track','PageView'); }catch(e){}
+    cb && cb();
+  }
+
+  function ready(fn){ if(document.readyState!='loading'){ fn(); } else { document.addEventListener('DOMContentLoaded', fn); } }
+
+  /* === Utils === */
+  function escReg(s){ return s.replace(/[-\/\\^$*+?.()|[\]{}]/g,'\\$&'); }
+  function passThroughUTM(url){
+    try{
+      var dest=new URL(url), here=new URL(location.href);
+      ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','fbclid','gclid']
+        .forEach(function(k){ var v=here.searchParams.get(k); if(v) dest.searchParams.set(k,v); });
+      return dest.toString();
+    }catch(e){ return url; }
+  }
+
+  /* === Click → Lead → Redirect === */
+  function bindClicks(){
+    var clicked=false;
+    function handleClick(e){
+      e.preventDefault();
+      if(clicked) return; clicked=true;
+
+      var a=e.currentTarget;
+      var pos=a.dataset.position||a.getAttribute('data-pos')||'main';
+
+      try{ if(window.fbq){ fbq('track','Lead',{content_name:'WhatsAppChannel',position:pos,url:location.href}); } }catch(err){}
+
+      var finalUrl=passThroughUTM(a.href);
+      setTimeout(function(){ window.location.href=finalUrl; }, CLICK_DELAY_MS);
+      setTimeout(function(){ clicked=false; }, 2000);
+    }
+
+    // 1) Prefer: class="wa-cta" वाले सभी बटन
+    var nodes=[].slice.call(document.querySelectorAll('a.wa-cta'));
+
+    // 2) Fallback: जिनका href आपके WA_LINK पर है (class न भी हो तो)
+    var sel='a[href*="'+escReg(WA_LINK)+'"]';
+    document.querySelectorAll(sel).forEach(function(a){
+      if(nodes.indexOf(a)===-1) nodes.push(a);
+    });
+
+    // पहले तीन को auto-label कर दें (reporting साफ)
+    nodes.forEach(function(a,i){
+      if(!a.dataset.position && !a.getAttribute('data-pos')){
+        a.dataset.position=(i===0?'main':(i===1?'secondary':'sticky'));
+      }
+      a.removeAttribute('target');     // same-tab = reliable send
+      a.addEventListener('click',handleClick);
+    });
+  }
+
+  loadPixel(function(){ ready(bindClicks); });
+})();
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=814133021299381&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expert Gaming Tips - Elevate Your Game</title>
@@ -419,6 +475,7 @@ src="https://www.facebook.com/tr?id=814133021299381&ev=PageView&noscript=1"
 </body>
 
 </html>
+
 
 
 
